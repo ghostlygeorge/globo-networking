@@ -1,0 +1,8 @@
+terraform {
+  backend "s3" {
+    bucket         = "terraform-backend-terraformbackends3bucket-3wc8yfa6ex5j"
+    key            = "./network_config/sv-7zBnU6C9orZKwafB.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-backend-TerraformBackendDynamoDBTable-1EZWM5PA1N4I2"
+  }
+}
