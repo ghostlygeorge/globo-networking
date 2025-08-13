@@ -14,6 +14,17 @@ variable "prefix" {
   default     = "globo-dev"
 }
 
+variable "environment" {
+  type        = string
+  description = "Environment of all resources"
+  default     = "development"
+}
+
+variable "billing_code" {
+  type        = string
+  description = "Billing code for network resources"
+}
+
 variable "cidr_block" {
   type        = string
   description = "(Optional) The CIDR block for the VPC. Default:10.42.0.0/16"
